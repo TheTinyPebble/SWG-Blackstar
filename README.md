@@ -1,67 +1,22 @@
-# SWGEmu Core3
+# Mechanic
 
-## What is SWGEmu?
+On SWG:BS a new profession has been implemented: Mechanic.
+Mechanic is a speeder-crafting profession which can craft a total of 13 landspeeders and speederbikes, and it can be obtained after master artisan. Furthermore, mechanics can alter the condition, speed, acceleration, and handling of the speeders through 15 new components granted throughout the profession. A few components also increase the resistance of the speeder. More speeders and components are planned to be added through quests and loot.
 
-Star Wars Galaxies was a massively multi-player online role playing game introduced by Sony Online Entertainment in the year 2003 and shut down in 2011.
-It is this game the SWGEmu project focuses to recreate at a specific milestone referred to as Pre-CU, or Pre-Combat Upgrade. The Combat Upgrade was a set of game changes which radically changed the game-play, to the dislike of thousands of players. These changes led to the founding of this project, in an attempt to "recreate" the game as it was during the Pre-CU era.
-At SWGEmu, Emulator refers to the software the SWGEmu team is building. This Emulator is meant to imitate Sony Online Entertainment's server-side software, which hosted the galaxies of Star Wars Galaxies during the Pre-CU era.
+![A showcase of the new crafting options](https://imgur.com/nVsNYjt.jpg)
 
-## How to Build
+It works much akin to WS and AS, where the component stats gets added to the enhancement modules, which then in turn gets added to the vehicle. You are able to experiment on relevant stats at each step, and each speeder will take a different number (1-3) of enhancement modules, but you're not limited in how many same-type enhancement modules you can add.
 
-### Dependencies
+A .tre file is required if you wish to test out the profession, which can be found here: https://megafile.cc/d/bkA8/mechanic
 
-  * CMake 3.1.0 or higher
-  * BerkeleyDB 5.3
-  * MySQL Client and Server
-  * OpenSSL libraries
-  * pthreads
-  * Lua 5.3 libraries
-  * Zlib libraries
-  * g++ 5.4+ or compatible
-  * engine3
-  * java jre 1.7+
+The mountCommand has been modified to allow the new modifiers to work, as well as the vehicleDeedImplementation to allow the stats to show up on the deeds. Trainers have been added to the world and to the recruitSkillTrainerCommand. Beyond that it's mostly .tre work and adding the schematics to the server.
 
-### Build
+If there are any questions or suggestions please feel free to message me on discord **@TheTinyPebble#7645**
 
-  * Install dependencies (Debian 9+ or Ubuntu 16.04+)
-
-        sudo apt install build-essential libmysqlclient-dev liblua5.3-dev libdb5.3-dev libssl-dev cmake git default-jre
-
-  * Install dependencies (RHEL/CentOS 8+ or Fedora 28+)
-
-        sudo dnf install automake cmake git gcc gcc-c++ java-1.8.0-openjdk-headless libatomic libdb-devel lua-devel make mariadb-devel openssl-devel
-
-  * Clone core3 repository somewhere  (~/git)
-
-        mkdir -p ~/git
-        cd ~/git
-        git clone http://review.swgemu.com/Core3
-  * Build Core3 with 8 threads
-
-        cd MMOCoreORB
-        make -j8
-  * Import sql database
-
-        mysql -h<MYSQLHOST> -u<MYSQLUSER> -p<MYSQLPASSWORD> < sql/swgemu.sql
-
-## How to Run
-
-    cd ~/git/Core3/MMOCoreORB/bin
-    ./core3
-
-## License
-
-    Copyright (C) 2019 SWGEmu
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU Affero General Public License as published by the Free Software Foundation,
-    either version 3 of the License, or (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
-    without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-    See the GNU Affero General Public License for more details.
-
-    You should have received a copy of the GNU Affero General Public License along with this program.
-    If not, see <http://www.gnu.org/licenses/>.
-
-For more information, see https://review.swgemu.com.
+TODO: 
+- Customization options for all speeders.
+- Make the vehicles compatible with Halyns multi-passenger.
+- The AV-21 power converter (from the Corvette) currently doesn't do anything. Either remove it or include it in the AV-21 draft schematic
+- The jetpack is still a deed from the reward, this should most likely be a schematic instead. Jetpack should also be updated to the new crafting system.
+- The flash speeder is still a veteran reward, should be removed.
+- Experience and crafting timers haven't been properly adjusted yet.

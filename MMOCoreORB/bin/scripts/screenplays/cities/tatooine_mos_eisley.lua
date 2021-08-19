@@ -396,6 +396,7 @@ function TatooineMosEisleyScreenPlay:spawnMobiles()
 	spawnMobile(self.planet, "trainer_armorsmith",0,-12.2888,1.13306,3.6161,171,1189577)
 	spawnMobile(self.planet, "trainer_merchant",0,12,1.13306,6,180,1189576)
 	spawnMobile(self.planet, "trainer_weaponsmith",0,-2.87328,1.13306,-8.72939,122,1189579)
+	spawnMobile(self.planet, "trainer_mechanic",0,-2.7,2.5,8.8,177,1189575)
 
 	--Med Center
 	spawnMobile(self.planet, "trainer_1hsword",0,4.4,0.2,-7.8,36,9655496)

@@ -220,6 +220,7 @@ function CorelliaDoabaGuerfelScreenPlay:spawnMobiles()
 	spawnMobile(self.planet, "trainer_droidengineer", 0,-11,1.13306,-14,0,3075414)
 	spawnMobile(self.planet, "trainer_merchant", 0,12,1.13306,6,180,3075410)
 	spawnMobile(self.planet, "trainer_weaponsmith", 0,-2.5,1.13306,-8.4,91,3075413)
+	spawnMobile(self.planet, "trainer_mechanic",0,-2.7,2.5,8.8,177,3075409)
 
 	--Guild Hall 3182 5240
 	spawnMobile(self.planet, "businessman", 60,3.32,1.13306,-8.49,228.007,3075360)

@@ -527,6 +527,7 @@ function CorelliaKorVellaScreenPlay:spawnMobiles()
 	spawnMobile(self.planet, "trainer_architect", 0, 11, 1.13, -14, 0, 2955400)
 	spawnMobile(self.planet, "trainer_weaponsmith", 0, -2.5, 1.13, -8.4, 91, 2955401)
 	spawnMobile(self.planet, "trainer_droidengineer", 0, -11, 1.13, -14, 0, 2955402)
+	spawnMobile(self.planet, "trainer_mechanic",0,-2.7,2.5,8.8,177,3075397)
 
 	--Medical Center
 	spawnMobile(self.planet, "trainer_doctor", 0, 12, 0.18, -1, 0, 3375392)

@@ -306,6 +306,7 @@ function CorelliaCoronetScreenPlay:spawnMobiles()
 	spawnMobile(self.planet, "trainer_droidengineer",0,-11,1.13306,-14,0,1855528)
 	spawnMobile(self.planet, "trainer_merchant",0,12.1,1.1,5.8,177,1855524)
 	spawnMobile(self.planet, "trainer_weaponsmith",0,-2.5,1.13306,-8.4,91,1855527)
+	spawnMobile(self.planet, "trainer_mechanic",0,-2.7,2.5,8.8,177,1855523)
 
 	--Capitol
 	pNpc = spawnMobile(self.planet, "noble",60,5.22842,0.3,2.91677,0,1855463)
