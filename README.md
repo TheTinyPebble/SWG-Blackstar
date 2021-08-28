@@ -7,7 +7,7 @@ Mechanic is a speeder-crafting profession which can craft a total of 13 landspee
 
 It works much akin to WS and AS, where the component stats gets added to the enhancement modules, which then in turn gets added to the vehicle. You are able to experiment on relevant stats at each step, and each speeder will take a different number (1-3) of enhancement modules, but you're not limited in how many same-type enhancement modules you can add.
 
-A .tre file is required if you wish to test out the profession, which can be found here: https://megafile.cc/d/bkA8/mechanic
+A .tre file is required if you wish to test out the profession, which can be found here: https://megafile.cc/d/6BlD/mechanic
 
 The mountCommand has been modified to allow the new modifiers to work, as well as the vehicleDeedImplementation to allow the stats to show up on the deeds. Trainers have been added to the world and to the recruitSkillTrainerCommand. Beyond that it's mostly .tre work and adding the schematics to the server.
 

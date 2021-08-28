@@ -64,12 +64,12 @@ object_draft_schematic_vehicle_component_enhanced_chipset = object_draft_schemat
 	customizationStringNames = {},
 	customizationDefaults = {},
 
-	ingredientTemplateNames = {"craft_armor_ingredients_n", "craft_armor_ingredients_n"},
-	ingredientTitleNames = {"1", "2"},
-	ingredientSlotType = {0, 0},
-	resourceTypes = {"metal_nonferrous", "metal_ferrous"},
-	resourceQuantities = {20, 10},
-	contribution = {100, 100},
+	ingredientTemplateNames = {"craft_armor_ingredients_n", "craft_armor_ingredients_n", "craft_armor_ingredients_n"},
+	ingredientTitleNames = {"wiring_harness", "ceramic_housing", "mounting_brackets"},
+	ingredientSlotType = {0, 0, 0},
+	resourceTypes = {"copper_kelsh", "ore_carbonate_chromite", "petrochem_inert_polymer"},
+	resourceQuantities = {30, 80, 20},
+	contribution = {100, 100, 100},
 
 	targetTemplate = "object/tangible/component/vehicle/enhanced_chipset.iff",
 

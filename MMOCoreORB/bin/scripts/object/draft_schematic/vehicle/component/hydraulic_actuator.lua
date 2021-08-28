@@ -67,7 +67,7 @@ object_draft_schematic_vehicle_component_hydraulic_actuator = object_draft_schem
 	ingredientTemplateNames = {"craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n"},
 	ingredientTitleNames = {"ceramic_housing", "relief_valve", "hydraulic_cylinder"},
 	ingredientSlotType = {0, 0, 0},
-	resourceTypes = {"ore_extrusive_bene", "polymer", "aluminum_agrinium"},
+	resourceTypes = {"ore_extrusive_bene", "petrochem_inert_polymer", "aluminum_agrinium"},
 	resourceQuantities = {15, 25, 85},
 	contribution = {100, 100, 100},
 

@@ -106,7 +106,7 @@ void VehicleDeedImplementation::updateCraftingValues(CraftingValues* values, boo
 	if (hitPoints < hpMin)
 		hitPoints = hpMin;
 
-	vehicle_speed = (int) values->getCurrentValue("vehicle_speed");
+	vehicle_speed = (float) round((values->getCurrentValue("vehicle_speed") * 100.0)) / 100.0;
 
 	if (vehicle_speed < speedMin)
 		vehicle_speed = speedMin;
@@ -114,7 +114,7 @@ void VehicleDeedImplementation::updateCraftingValues(CraftingValues* values, boo
 	if (vehicle_speed > speedMax)
 		vehicle_speed = speedMax;
 
-	vehicle_acceleration = (int) values->getCurrentValue("vehicle_acceleration");
+	vehicle_acceleration = (float) round((values->getCurrentValue("vehicle_acceleration") * 100.0)) / 100.0;
 
 	if (vehicle_acceleration < accelMin)
 		vehicle_acceleration = accelMin;
@@ -122,7 +122,7 @@ void VehicleDeedImplementation::updateCraftingValues(CraftingValues* values, boo
 	if (vehicle_acceleration > accelMax)
 		vehicle_acceleration = accelMax;
 
-	vehicle_handling = (int) values->getCurrentValue("vehicle_handling");
+	vehicle_handling = (float) round((values->getCurrentValue("vehicle_handling") * 10.0)) / 10.0;
 
 	if (vehicle_handling < turnMin)
 		vehicle_handling = turnMin;
@@ -237,12 +237,12 @@ int VehicleDeedImplementation::handleObjectMenuSelect(CreatureObject* player, by
 		}
 
 		Locker vlocker(vehicle, player);
-
 		vehicle->createChildObjects();
 		vehicle->setMaxCondition(hitPoints);
 		vehicle->setConditionDamage(0);
-		vehicle->setRunSpeed(vehicle_speed / 10); //Divide by 10 to account for base vehicle speed
-		vehicle->setTurnScale(vehicle_handling / 75, true); //Divide by 75 to account for base vehicle handling
+		vehicle->setRunSpeed(vehicle_speed);
+		vehicle->setSpeedMultiplierMod(vehicle_speed / 10); //Divide by 10 to account for base vehicle speed
+		vehicle->setTurnScale(vehicle_handling / 75, true); //This is a multiplier. Divide by 75 to account for base vehicle handling
 		vehicle->setAccelerationMultiplierMod(vehicle_acceleration / 10, true); //Divide by 10 to account for base vehicle acceleration
 		vehicle->setKinetic(kinResist);
 		vehicle->setEnergy(energyResist);

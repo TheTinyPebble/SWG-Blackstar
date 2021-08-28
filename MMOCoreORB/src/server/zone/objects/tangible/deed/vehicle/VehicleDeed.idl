@@ -14,9 +14,9 @@ include templates.SharedObjectTemplate;
 @json
 class VehicleDeed extends Deed {
 	protected int hitPoints;
-	protected int vehicle_speed;
-	protected int vehicle_acceleration;
-	protected int vehicle_handling;
+	protected float vehicle_speed;
+	protected float vehicle_acceleration;
+	protected float vehicle_handling;
 	protected string controlDeviceObjectTemplate;
 	protected int armorRating;
 	protected float kinResist;
@@ -34,7 +34,7 @@ class VehicleDeed extends Deed {
 		hitPoints = 1500;
 		vehicle_speed = 20;
 		vehicle_acceleration = 10;
-		vehicle_handling = 1;
+		vehicle_handling = 75;
 		armorRating = 0;
 		kinResist = 15;
 		energyResist = 10;

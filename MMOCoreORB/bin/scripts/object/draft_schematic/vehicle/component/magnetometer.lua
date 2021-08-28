@@ -67,7 +67,7 @@ object_draft_schematic_vehicle_component_magnetometer = object_draft_schematic_v
 	ingredientTemplateNames = {"craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n"},
 	ingredientTitleNames = {"metal_casing", "steel_frame", "internal_dampener"},
 	ingredientSlotType = {0, 0, 0},
-	resourceTypes = {"iron_colat", "steel_quadranium", "polymer"},
+	resourceTypes = {"iron_colat", "steel_quadranium", "petrochem_inert_polymer"},
 	resourceQuantities = {35, 85, 20},
 	contribution = {100, 100, 100},
 

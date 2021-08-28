@@ -67,7 +67,7 @@ object_draft_schematic_vehicle_component_fuel_dispersion_mechanism = object_draf
 	ingredientTemplateNames = {"craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n"},
 	ingredientTitleNames = {"valve_spring", "gas_apparatus", "spray_tip"},
 	ingredientSlotType = {0, 0, 0},
-	resourceTypes = {"steel_quadranium", "aluminum_linksteel", "polymer"},
+	resourceTypes = {"steel_quadranium", "aluminum_linksteel", "petrochem_inert_polymer"},
 	resourceQuantities = {50, 65, 25},
 	contribution = {100, 100, 100},
 

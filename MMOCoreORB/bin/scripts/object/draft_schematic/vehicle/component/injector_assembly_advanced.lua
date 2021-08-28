@@ -67,7 +67,7 @@ object_draft_schematic_vehicle_component_injector_assembly_advanced = object_dra
 	ingredientTemplateNames = {"craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n"},
 	ingredientTitleNames = {"jewel_bearings", "injector_nozzle", "wiring_harness", "tubing", "base_vehicle_module_engine_1", "base_vehicle_module_engine_2", "base_vehicle_module_engine_3"},
 	ingredientSlotType = {0, 0, 0, 0, 3, 3, 3},
-	resourceTypes = {"armophous_rudic", "aluminum_chromium", "copper_codoan", "polymer", "object/tangible/component/vehicle/shared_base_vehicle_module_engine.iff", "object/tangible/component/vehicle/shared_base_vehicle_module_engine.iff", "object/tangible/component/vehicle/shared_base_vehicle_module_engine.iff"},
+	resourceTypes = {"armophous_rudic", "aluminum_chromium", "copper_codoan", "petrochem_inert_polymer", "object/tangible/component/vehicle/shared_base_vehicle_module_engine.iff", "object/tangible/component/vehicle/shared_base_vehicle_module_engine.iff", "object/tangible/component/vehicle/shared_base_vehicle_module_engine.iff"},
 	resourceQuantities = {30, 55, 25, 25, 1, 1, 1},
 	contribution = {100, 100, 100, 100, 100, 100, 100},
 
