@@ -270,6 +270,7 @@ function NabooKaadaraScreenPlay:spawnMobiles()
 	spawnMobile(self.planet, "trainer_scout", 1, 5192.38, -192, 6614.09, 5, 0)
 	spawnMobile(self.planet, "trainer_scout", 1, -10.8899, 1.13306, 4.89649, 204, 1741459)
 	spawnMobile(self.planet, "trainer_weaponsmith", 1, -2.5, 1.13306, -8.4, 91, 1741471)
+	spawnMobile(self.planet, "trainer_mechanic",0,-2.7,2.5,8.8,177,1741467)
 	pNpc = spawnMobile(self.planet, "trainer_shipwright",1,5.1,0.6,66.6,119,1741539)
 	self:setMoodString(pNpc, "neutral")
 

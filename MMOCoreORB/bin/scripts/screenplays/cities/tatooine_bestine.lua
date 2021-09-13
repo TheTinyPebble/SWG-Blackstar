@@ -168,6 +168,7 @@ function TatooineBestineScreenPlay:spawnMobiles()
 	spawnMobile("tatooine", "trainer_droidengineer",0,-11.6346,1.13306,-13.252,2,1028583)
 	spawnMobile("tatooine", "trainer_weaponsmith",0,-3,1.13306,-8.3,91,1028582)
 	spawnMobile("tatooine", "trainer_merchant",0,12,1.13306,6,180,1028579)
+	spawnMobile("tatooine", "trainer_mechanic",0,-2.7,2.5,8.8,177,1028575)
 
 	--Guild Hall -1187 -3515
 	spawnMobile("tatooine", "contractor",60,-3.69,1.13306,-6,11.0003,1028558)

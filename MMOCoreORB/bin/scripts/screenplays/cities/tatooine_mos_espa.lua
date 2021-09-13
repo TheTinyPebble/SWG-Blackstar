@@ -291,6 +291,7 @@ function TatooineMosEspaScreenPlay:spawnMobiles()
 	spawnMobile(self.planet, "trainer_droidengineer",0,-11.5362,1.13306,-12.6351,1,1256023)
 	spawnMobile(self.planet, "trainer_weaponsmith",0,-2.95975,1.13306,-8.77207,109,1256022)
 	spawnMobile(self.planet, "trainer_merchant",0,12,1.13306,6,180,1256019)
+	spawnMobile(self.planet, "trainer_mechanic",0,-2.7,2.5,8.8,177,1256018)
 
 	--Med Center
 	spawnMobile(self.planet, "trainer_combatmedic",0,7.93319,0.184067,5.54261,86,4005424)

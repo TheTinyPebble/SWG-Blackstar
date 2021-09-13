@@ -94,6 +94,7 @@ function NabooKerenScreenPlay:spawnMobiles()
 	spawnMobile(self.planet, "trainer_droidengineer",0,-11,1.13306,-13,0,1650545)
 	spawnMobile(self.planet, "trainer_merchant",0,12,1.13306,6,180,1650541)
 	spawnMobile(self.planet, "trainer_weaponsmith",0,-2.5,1.13306,-8.4,91,1650544)
+	spawnMobile(self.planet, "trainer_mechanic",0,-2.7,2.5,8.8,177,1650540)
 
 	--Guild Hall 1851 2613
 	spawnMobile(self.planet, "trainer_brawler",0,-11,1.13306,-12.5,0,1650535)

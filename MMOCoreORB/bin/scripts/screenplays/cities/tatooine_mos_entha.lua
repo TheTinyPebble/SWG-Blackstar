@@ -428,6 +428,7 @@ function TatooineMosEnthaScreenPlay:spawnMobiles()
 	spawnMobile(self.planet, "trainer_droidengineer",0,-11.2719,1.13306,-13.4562,0,1154185)
 	spawnMobile(self.planet, "trainer_merchant",0,12,1.13306,6,180,1154181)
 	spawnMobile(self.planet, "trainer_weaponsmith",0,-3.1,1.1,-8.4,95,1154184)
+	spawnMobile(self.planet, "trainer_mechanic",0,-2.7,2.5,8.8,177,1154180)
 
 	--Guild Hall/Theater
 	pNpc = spawnMobile(self.planet, "farmer_rancher",60,25.1612,2.6,17.6257,180.006,1153601)

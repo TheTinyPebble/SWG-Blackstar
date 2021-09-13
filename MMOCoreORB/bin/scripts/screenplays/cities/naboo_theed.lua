@@ -302,6 +302,7 @@ function NabooTheedScreenPlay:spawnMobiles()
 	spawnMobile(self.planet, "trainer_droidengineer",0,-11,1.13306,-13,0,1692095)
 	spawnMobile(self.planet, "trainer_merchant",0,12,1.13306,6,180,1692091)
 	spawnMobile(self.planet, "trainer_weaponsmith",0,-3.1,1.1,-8.2,91,1692094)
+	spawnMobile(self.planet, "trainer_mechanic",0,-2.7,2.5,8.8,177,1692090)
 
 	--Cantina
 	pNpc = spawnMobile(self.planet, "junk_dealer", 0, -5.8, -0.9, -20.9, -52, 96)

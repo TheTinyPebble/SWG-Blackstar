@@ -183,6 +183,7 @@ function NabooDeejaPeakScreenPlay:spawnMobiles()
 	spawnMobile("naboo", "trainer_droidengineer", 0,-11.3655,1.13306,-13.793,236,1685240)
 	spawnMobile("naboo", "trainer_merchant", 0,14,1.1,5.7,-169,1685236)
 	spawnMobile("naboo", "trainer_weaponsmith", 0,-2.5,1.13306,-8.4,91,1685239)
+	spawnMobile("naboo", "trainer_mechanic",0,-2.7,2.5,8.8,177,1685235)
 
 	--Guild Hall/Theater 4963 -1475
 	pNpc = spawnMobile("naboo", "shadowy_figure",60,-22.5,2.1,71.5,18,2725361)
