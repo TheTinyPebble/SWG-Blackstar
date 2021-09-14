@@ -32,7 +32,7 @@ class VehicleDeed extends Deed {
 	public VehicleDeed() {
 		Logger.setLoggingName("VehicleDeed");
 		hitPoints = 1500;
-		vehicle_speed = 20;
+		vehicle_speed = 10;
 		vehicle_acceleration = 10;
 		vehicle_handling = 75;
 		armorRating = 0;

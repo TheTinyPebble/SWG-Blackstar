@@ -13,6 +13,10 @@
 class VehicleDeedTemplate : public DeedTemplate {
 private:
 	String controlDeviceObjectTemplate;
+	int hitPoints;
+	float vehicle_speed;
+	float vehicle_acceleration;
+	float vehicle_handling;
 
 public:
 	VehicleDeedTemplate() {
@@ -27,6 +31,10 @@ public:
 		DeedTemplate::readObject(templateData);
 
 		controlDeviceObjectTemplate = templateData->getStringField("controlDeviceObjectTemplate");
+		hitPoints = templateData->getStringField("hit_points");
+		vehicle_speed = templateData->getStringField("vehicle_speed");
+		vehicle_acceleration = templateData->getStringField("vehicle_acceleration");
+		vehicle_handling = templateData->getStringField("vehicle_handling");
     }
 
 	String getControlDeviceObjectTemplate()

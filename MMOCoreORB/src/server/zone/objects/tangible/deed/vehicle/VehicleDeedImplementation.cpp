@@ -27,19 +27,19 @@ void VehicleDeedImplementation::loadTemplateData(SharedObjectTemplate* templateD
 void VehicleDeedImplementation::fillAttributeList(AttributeListMessage* alm, CreatureObject* object) {
 	DeedImplementation::fillAttributeList(alm, object);
 
-	alm->insertAttribute("hit_points", hitPoints);
-	alm->insertAttribute("vehicle_speed", vehicle_speed);
-	alm->insertAttribute("vehicle_acceleration", vehicle_acceleration);
-	alm->insertAttribute("vehicle_handling", vehicle_handling);
-	
+	alm->insertAttribute("cat_vehicle_stats.hit_points", hitPoints);
+	alm->insertAttribute("cat_vehicle_stats.vehicle_speed", vehicle_speed);
+	alm->insertAttribute("cat_vehicle_stats.vehicle_acceleration", vehicle_acceleration);
+	alm->insertAttribute("cat_vehicle_stats.vehicle_handling", vehicle_handling);
+
 	if (armorRating == 0)
-		alm->insertAttribute("armorrating","@obj_attr_n:armor_pierce_none");
+		alm->insertAttribute("cat_vehicle_stats.armorrating", "@obj_attr_n:armor_pierce_none");
 	else if (armorRating == 1)
-		alm->insertAttribute("armorrating","@obj_attr_n:armor_pierce_light");
+		alm->insertAttribute("cat_vehicle_stats.armorrating","@obj_attr_n:armor_pierce_light");
 	else if (armorRating == 2)
-		alm->insertAttribute("armorrating","@obj_attr_n:armor_pierce_medium");
+		alm->insertAttribute("cat_vehicle_stats.armorrating","@obj_attr_n:armor_pierce_medium");
 	else if (armorRating == 3)
-		alm->insertAttribute("armorrating","@obj_attr_n:armor_pierce_heavy");
+		alm->insertAttribute("cat_vehicle_stats.armorrating","@obj_attr_n:armor_pierce_heavy");
 
 	// Add resists
 	StringBuffer kin;
